@@ -1,7 +1,7 @@
 CREATE TABLE item(
 	itemId smallint NOT NULL AUTO_INCREMENT,
 	itemName varchar(30) NOT NULL,
-	itemDesc varchar(255) DEFAULT 'No description yet.',
+	itemDesc TEXT DEFAULT 'No description yet.',
 	itemType varchar(30) DEFAULT 'Unspecified',
 	itemGameId varchar(30) DEFAULT 'Unspecified',
 	itemIsCraftable BOOLEAN NOT NULL,
