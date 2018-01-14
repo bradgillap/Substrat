@@ -21,7 +21,7 @@ CREATE TABLE recipe(
 	FOREIGN KEY (itemId) REFERENCES item(itemId)
 );
 
-INSERT INTO item ( itemName, itemDesc, itemType, itemGameId, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemType, itemGameId, itemMenu, itemIsCraftable, itemIsRaw )
 VALUES	('Titanium',
 	'Titanium is a raw material that is heavily used in crafting. it is used to craft almost all Alterra technology, including Equipment, Tools, Vehicles and Seabase modules. It can be found in Limestone Outcrops, crafted from metal salvage, or obtained by using the Scanner to scan fragments for Blueprints that the player already has. Titanium can also be found as a large resource deposit.',
 	'Raw Resource',
