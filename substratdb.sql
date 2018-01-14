@@ -28,5 +28,5 @@ VALUES	('Titanium',
 	'titanium',
 	'menu',
 	 1,
-	 1,
+	 1
 	);
