@@ -35,7 +35,7 @@ VALUES	(
 		1,
 		1,
 		1,
-		1
+		0
 	);
 
 INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
@@ -48,7 +48,7 @@ VALUES	(
 		1,
 		1,
 		1,
-		1
+		0
 	);
 
 
@@ -62,7 +62,7 @@ VALUES	(
 		1,
 		1,
 		1,
-		1
+		0
 	);
 
 
@@ -76,7 +76,7 @@ VALUES	(
 		1,
 		1,
 		1,
-		1
+		0
 	);
 
 
@@ -90,7 +90,7 @@ VALUES	(
 		1,
 		1,
 		1,
-		1
+		0
 	);
 
 
@@ -104,7 +104,7 @@ VALUES	(
 		1,
 		1,
 		1,
-		1
+		0
 	);
 
 INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
@@ -117,7 +117,7 @@ VALUES	(
 		1,
 		1,
 		1,
-		1
+		0
 	);
 
 INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
@@ -130,7 +130,7 @@ VALUES	(
 		5,
 		1,
 		1,
-		1
+		0
 	);
 
 INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
