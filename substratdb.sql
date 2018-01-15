@@ -106,3 +106,42 @@ VALUES	(
 		1,
 		1
 	);
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Silicone Rubber',
+		'Synthetic, silicone-based rubber.',
+		'silicone',
+		'Basic Materials',
+		'Fabricator',
+		1,
+		1,
+		1,
+		1
+	);
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Titanium Ingot',
+		'Ti. Condensed titanium bar.',
+		'titaniumingot',
+		'Basic Materials',
+		'Fabricator',
+		5,
+		1,
+		1,
+		1
+	);
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Titanium',
+		'Ti. Basic building material.',
+		'titanium',
+		'Basic Materials',
+		'Fabricator',
+		1,
+		1,
+		1,
+		1
+	);
