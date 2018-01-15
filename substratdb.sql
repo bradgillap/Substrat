@@ -1,10 +1,12 @@
 CREATE TABLE item(
 	itemId smallint NOT NULL AUTO_INCREMENT,
-	itemName varchar(30) NOT NULL,
+	itemName varchar(50) NOT NULL,
 	itemDesc TEXT NOT NULL,
-	itemType varchar(30) DEFAULT 'Unspecified',
-	itemGameId varchar(30) DEFAULT 'Unspecified',
+	itemGameId varchar(50) DEFAULT 'Unspecified',
 	itemMenu varchar(30) DEFAULT 'Unspecified',
+	itemMadeWith varchar(30) DEFAULT 'Unspecified',
+	itemBuildTime tinyint,
+	itemSize tinyint,
 	itemIsCraftable BOOLEAN NOT NULL,
 	itemIsRaw BOOLEAN NOT NULL,
 	itemUpdated timestamp DEFAULT CURRENT_TIMESTAMP,
@@ -21,20 +23,86 @@ CREATE TABLE recipe(
 	FOREIGN KEY (itemId) REFERENCES item(itemId)
 );
 
-INSERT INTO item ( itemName, itemDesc, itemType, itemGameId, itemIsCraftable, itemIsRaw )
-VALUES	('Titanium',
-	'Titanium is a raw material that is heavily used in crafting. it is used to craft almost all Alterra technology, including Equipment, Tools, Vehicles and Seabase modules. It can be found in Limestone Outcrops, crafted from metal salvage, or obtained by using the Scanner to scan fragments for Blueprints that the player already has. Titanium can also be found as a large resource deposit.',
-	'Basic Material',
-	'titanium',
-	 1,
-	 1
+/*Basic Materials */
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Bleach',
+		'NaCIO. Sodium hypochlorite bleach. Sanitizing applications.',
+		'bleach',
+		'Basic Materials',
+		'Fabricator',
+		1,
+		1,
+		1,
+		1
 	);
 
-INSERT INTO item ( itemName, itemDesc, itemType, itemGameId, itemIsCraftable, itemIsRaw )
-VALUES	('Titanium Ingot',
-	'Condensed titanium bar.',
-	'Basic Material',
-	'titaniumingot',
-	 1,
-	 1
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Enameled Glass',
+		'Glass, hardened using a natural substrate.',
+		'enameledglass',
+		'Basic Materials',
+		'Fabricator',
+		1,
+		1,
+		1,
+		1
+	);
+
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Fiber Mesh',
+		'Strong natural fiber. Comfy',
+		'fibermesh',
+		'Basic Materials',
+		'Fabricator',
+		1,
+		1,
+		1,
+		1
+	);
+
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw)
+VALUES	(
+		'Glass',
+		'SiO4. Pure fused quartz glass.',
+		'glass',
+		'Basic Materials',
+		'Fabricator',
+		1,
+		1,
+		1,
+		1
+	);
+
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Lubricant',
+		'Naturally-derived, oil-based lubrican. Industrial applications.',
+		'lubricant',
+		'Basic Materials',
+		'Fabricator',
+		1,
+		1,
+		1,
+		1
+	);
+
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Plasteel Ingot',
+		'Ultra-strong synthetic construction material.',
+		'plasteelingot',
+		'Basic Materials',
+		'Fabricator',
+		1,
+		1,
+		1,
+		1
 	);
