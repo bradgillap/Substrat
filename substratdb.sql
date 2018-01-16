@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `item` (
 	`itemPCapacity` smallint(6) DEFAULT NULL 					COMMENT 'Electricity item can store.',
 	`itemPPM` smallint(6) DEFAULT NULL 							COMMENT 'Power generated per minute.',
 	`itemPConsumption` smallint(6) DEFAULT NULL 				COMMENT 'Power consumed per minute.',  
-	`itemHullIntegrity` tinyint(4) DEFAULT NULL 				COMMENT 'Hull integrity added to bases with this item.',
+	`itemHullIntegrity` decimal(3,2) DEFAULT NULL 				COMMENT 'Hull integrity added to bases with this item.',
 	`itemEnergy` smallint(6) DEFAULT NULL 						COMMENT 'Power item will convert to in the bioreactor.',
 	`itemBuildTime` tinyint(4) DEFAULT NULL 					COMMENT 'Time it takes to craft item.',
 	`itemSize` tinyint(4) DEFAULT NULL 							COMMENT 'Inventory space item uses.',
@@ -288,22 +288,208 @@ VALUES	(
 		0	/*raw*/
 	);
 
-/* Base Pieces */
+/* Base Pieces. These pieces have no game ID*/
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
-		'Synthetic Fibers',
-		'High-strength synthetic fibers.',
-		'aramidfibers',
-		'Advanced Materials',
-		'Fabricator',
+		'Foundation',
+		'Reinforced habitat foundation.',
+		'Base Pieces',
+		'Habitat Builder',
 		0,	/* Power Capacity */
 		0,	/* Power Per Minute */
 		0,	/* Power Consumption Per Minute */
-		0,	/*hull integrity*/
+		2,	/*hull integrity*/
 		0,	/*BioReactor Energy*/
-		4,	/*Build Time*/
-		1,	/*size*/
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+
+INSERT INTO item ( itemName, itemDesc, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'I Compartment',
+		'I-shaped compartment (-1HP).',
+		'Base Pieces',
+		'Habitat Builder',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		-1,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+
+INSERT INTO item ( itemName, itemDesc, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'I Glass Compartment',
+		'Basic glass-walled compartment (-2)HP.',
+		'Base Pieces',
+		'Habitat Builder',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		-2,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+
+INSERT INTO item ( itemName, itemDesc, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'L Compartment',
+		'L-shaped compartment (-1HP).',
+		'Base Pieces',
+		'Habitat Builder',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		-1,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'L Glass Compartment',
+		'L-shaped glass compartment (-2HP).',
+		'Base Pieces',
+		'Habitat Builder',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		-2,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+
+INSERT INTO item ( itemName, itemDesc, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'T Compartment',
+		'T-shaped compartment (-1HP).',
+		'Base Pieces',
+		'Habitat Builder',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		-1,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'X Compartment',
+		'X-shaped compartment (-1HP).',
+		'Base Pieces',
+		'Habitat Builder',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		-1,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Vertical Connector',
+		'Vertical base connector (-0.5HP)',
+		'Base Pieces',
+		'Habitat Builder',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		-0.5,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+	
+/*Base Rooms*/
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Moonpool',
+		'Vehicle docking bay (-5HP).',
+		'basemoonpool',
+		'Base Rooms',
+		'Habitat Builder',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		-5,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Multipurpose Room',
+		'Basic room (-1.25HP).',
+		'baseroom',
+		'Base Rooms',
+		'Habitat Builder',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		-1.25,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Observatory',
+		'Compartment with 360 degree views and low structural integrity (-3HP).',
+		'baseobservatory',
+		'Base Rooms',
+		'Habitat Builder',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		-1.25,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Scanner Room',
+		'Locate resources and wrecks within range.',
+		'basemaproom',
+		'Base Rooms',
+		'Habitat Builder',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		-1,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		0,	/*size*/
 		1,	/*craftable*/
 		0	/*raw*/
 	);
