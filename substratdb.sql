@@ -493,3 +493,245 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
+
+/* Base Walls */
+
+INSERT INTO item ( itemName, itemDesc, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Reinforcement',
+		'Increases Hull Integrity (+7HP).',
+		'Base Walls',
+		'Habitat Builder',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		7,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Window',
+		'Observatory window (-1HP).',
+		'Base Rooms',
+		'Habitat Builder',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		-1,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+
+/*Cooked Food*/
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cooked Hoopfish',
+		'small, edible prey fish.',
+		'hoopfish',
+		'Cooked Food',
+		'Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		115,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cooked Garryfish',
+		'Floral flavor, but very little of it.',
+		'garryfish',
+		'Cooked Food',
+		'Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		325,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cooked Reginald',
+		'Pungent and smokey. Extremely filling.',
+		'reginald',
+		'Cooked Food',
+		'Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		2200,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cooked Boomerang',
+		'Good eating around teh fins.',
+		'boomerang',
+		'Cooked Food',
+		'Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		525,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cooked Peeper',
+		'Protein-rich eyeballs. Highly nutritious.',
+		'peeper',
+		'Cooked Food',
+		'Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		750,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cooked Oculus',
+		'Small, edible prey fish.',
+		'oculus',
+		'Cooked Food',
+		'Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		750,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cooked Holefish',
+		'Gelatinous flesh.',
+		'holefish',
+		'Cooked Food',
+		'Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		105,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cooked Bladderfish',
+		'Spongy. Gristly. Low calorie count. Thankfully odorless.',
+		'bladderfish',
+		'Cooked Food',
+		'Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		400,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cooked Spinefish',
+		'Never eat the antennae.',
+		'spinefish',
+		'Cooked Food',
+		'Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		575,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cooked Hoverfish',
+		'Small, edible prey fish.',
+		'hoverfish',
+		'Cooked Food',
+		'Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		115,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cooked Magmarang',
+		'Small, edible prey fish.',
+		'lavaboomerang',
+		'Cooked Food',
+		'Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		115,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cooked Red Eyeye',
+		'Small, edible prey fish.',
+		'lavaeyeye',
+		'Cooked Food',
+		'Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		500,	/*BioReactor Energy*/
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
