@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `item` (
 	UNIQUE KEY `itemId` (`itemId`)
 );
 
-CREATE TABLE recipe(
+CREATE TABLE IF NOT EXISTS recipe(
 	recipeId smallint NOT NULL AUTO_INCREMENT,
 	itemId smallint NOT NULL,
 	recipeUpdated timestamp DEFAULT CURRENT_TIMESTAMP,
