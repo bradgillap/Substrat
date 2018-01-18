@@ -1069,3 +1069,317 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
+/* Cyclops Ignored blueprints */
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cyclops',
+		'Vast industrial-use submarine.',
+		'cyclops',
+		'Cyclops',
+		'Mobile Veicle Bay',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		0,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+
+/* Cyclops Upgrades */
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cyclops Decoy Tube Upgrade',
+		'Increases the capacity of the cyclops decoy loading tube.',
+		'cyclopsdecoymodule',
+		'Cyclops Upgrades',
+		'Cyclops Upgrade Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cyclops Depth Module MK1',
+		'Increases safe dirving depth. Does not stack.',
+		'cyclopshullmodule1',
+		'Cyclops Upgrades',
+		'Cyclops Upgrade Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cyclops Engine Efficiency Module',
+		'Recycles heat by-product to increase engine efficiency',
+		'powerupgrademodule',
+		'Cyclops Upgrades',
+		'Cyclops Upgrade Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cyclops Fire Suppression System',
+		'Installs a fire suppression system on the Cyclops.',
+		'cyclopsfiresuppressionmodule',
+		'Cyclops Upgrades',
+		'Cyclops Upgrade Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cyclops Shield Generator',
+		'Creates a temporary barrier around the sub, rendering it invulnerable for a brief time.',
+		'cyclopsshieldmodule',
+		'Cyclops Upgrades',
+		'Cyclops Upgrade Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cyclops Sonar Upgrade',
+		'Scans the terrain outside the Cyclops.',
+		'cyclopssonarmodule',
+		'Cyclops Upgrades',
+		'Cyclops Upgrade Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Cyclops Thermal Reactor Module',
+		'Transfers environmental heat energy into electrical power.',
+		'cyclopsthermalreactormodule',
+		'Cyclops Upgrades',
+		'Cyclops Upgrade Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+
+/* Electronics */
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Advanced Wiring Kit',
+		'CPU used in advanced construction.',
+		'advancedwiringkit',
+		'Electronics',
+		'Fabricator',
+		0,	/* Power Capacity */
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		1,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Battery',
+		'Mobile power source.',
+		'battery',
+		'Electronics',
+		'Fabricator',
+		0,	/* Power Capacity. Does not add power to bases.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		1,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Computer Chip',
+		'Multi-purpose CPU.',
+		'computerchip',
+		'Electronics',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		1,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Copper Wire',
+		'Copper atoms fabricated into basic electrical wiring.',
+		'copperwire',
+		'Electronics',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		1,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Power Cell',
+		'High-capacity mobile power source.',
+		'powercell',
+		'Electronics',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		1,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Reactor Rod',
+		'Used to power nuclear reactors.',
+		'reactorrod',
+		'Electronics',
+		'Fabricator',
+		2500,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Depleted Reactor Rod',
+		'Used to power nuclear reactors.',
+		'depletedreactorrod',
+		'Electronics',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		0,	/*Build Time*/
+		1,	/*size*/
+		0,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Wiring Kit',
+		'Insulated silver wire. Essential electronic component.',
+		'wiringkit',
+		'Electronics',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
