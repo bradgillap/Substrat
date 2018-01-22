@@ -2176,3 +2176,179 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
+/* Machines */
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Beacon',
+		'Navigation aid. Maintains and broadcasts its position. Configurable name.',
+		'beacon',
+		'Machines',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		4,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Creature Decoy',
+		'Attracts creatures to its location. Can be deployed by hand or by a submarine. Cannot be reclaimed once deployed.',
+		'cyclopsdecoy',
+		'Machines',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		2,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Grav Trap',
+		'Uses artificial gravity to attract light objects and small creatures.',
+		'gravsphere',
+		'Machines',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		4,	/*Build Time*/
+		4,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Mobile Vehicle Bay',
+		'Fabricates vehicles from raw materials.',
+		'constructor',
+		'Machines',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		10,	/*Build Time*/
+		9,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Prawn Suit',
+		'Epic mech suit designed for navigating challenging environments on foot.',
+		'exosuitfragment',
+		'Machines',
+		'Mobile Vehicle Bay',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Seaglide',
+		'Converts torque into thrust underwater via propeller.',
+		'seaglide',
+		'Machines',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		5,	/*Build Time*/
+		6,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Seamoth',
+		'One-person vehicle.',
+		'seamoth',
+		'Machines',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Waterproof Locker',
+		'4x4 storage that maintains position in the water.',
+		'smallstorage',
+		'Machines',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		4,	/*Build Time*/
+		4,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+	
+/* Miscellaneous */
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Waterproof Locker',
+		'4x4 storage that maintains position in the water.',
+		'smallstorage',
+		'Miscellaneous',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		4,	/*Build Time*/
+		4,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
