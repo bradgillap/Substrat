@@ -1383,3 +1383,796 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
+/* Equipment */
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Compass',
+		'Displays compass heading on the HUD.',
+		'compass',
+		'Equipment',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		0,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Fins',
+		'Translate vertical limb movements underwater into forward thrust. Enhence swim speed by approximately 15%.',
+		'fins',
+		'Equipment',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		4,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Fire Extinguisher',
+		'Extinguishes fires.',
+		'fireextinguisher',
+		'Equipment',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'First Aid Kit',
+		'Treated bandages. Apply to staunch blood-flow and sanitize wounds.',
+		'firstaidkit',
+		'Equipment',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Floating Air Pump',
+		'Floating device that pumps air into pipes. Acts as a starting point for a pipe chain.',
+		'pipesurfacefloater',
+		'Equipment',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Orange Tablet',
+		'This device hums slightly, and displays an orange-lit symbol resembling an "n".',
+		'precursorkey_orange',
+		'Equipment',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Pipe',
+		'A chain of pipes can be used to pump air to far away places. Start with a pump.',
+		'pipe',
+		'Equipment',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Purple Tablet',
+		'This carbon-based device is lighter than it looks, and features a symbol which resembles a "U", lit up in purple. Despite the onboard power still functioning, algae growth on the exterior indicates it was abandoned hundreds, perhaps thousands of years ago. While the technology is far beyond federation levels, and there is no obvious way to interface with it, it should nonetheless be possible to fabricate a precise physical copy of the device, if necessary.',
+		'precursorkey_purple',
+		'Equipment',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		1,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Radiation Suit',
+		'Lead-lined suit providing insulation from radiation.',
+		'radiationsuit',
+		'Equipment',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		6,	/*Build Time*/
+		4,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Rebreather',
+		'Conserves oxygen when diving deeper. Absorbs and recycles CO2 into breathable air.',
+		'rebreather',
+		'Equipment',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		4,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Reinforced Dive Suit',
+		'Heavy synthetic fiber dive suit providing 50% physical protection and enhanced survival in extreme temperatures.',
+		'reinforceddivesuit',
+		'Equipment',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		6,	/*Build Time*/
+		4,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Standard O2 Tank',
+		'O2 mix. Compressed breathable air.',
+		'tank',
+		'Equipment',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		6,	/*Build Time*/
+		6,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Standard O2 Tank',
+		'O2 mix. Compressed breathable air.',
+		'tank',
+		'Equipment',
+		'Fabricator',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		6,	/*Build Time*/
+		6,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+/* Exterior Lights */
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Flightlight',
+		'Industrial lighting designed for all environments.',
+		'techlight',
+		'Exterior Lighting',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		60,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Spotlight',
+		'Fixed lighting solution.',
+		'spotlight',
+		'Exterior Lighting',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		60,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+/* Exterior Modules */
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Power Transmitter',
+		'Extends the range of a power source.',
+		'powertransmitter',
+		'Exterior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Solar Panel',
+		'Powers habitat oxygen generation and other modules. Converts available sunlight into low power electrical energy.',
+		'solarpanel',
+		'Exterior Modules',
+		'Habitat Builder',
+		125,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Thermal Plant',
+		'Converts heat to energy at medium efficiency.',
+		'thermalplant',
+		'Exterior Modules',
+		'Habitat Builder',
+		250,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+/* Exterior Other */
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Base-attached Air Pump',
+		'Pumps oxygen from a powered habitat to an attached pipe network.',
+		'basepipeconnector',
+		'Exterior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Exterior Growbed',
+		'Artificial plant bed, suitable for use on land or underwater.',
+		'farmingtray',
+		'Exterior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+/* Interior Installations */
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Ladder',
+		'Connects two floors.',
+		'',
+		'Interior Installations',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Bulkhead',
+		'Provides structural support and prevents flooding (+3HP).',
+		'basebulkhead',
+		'Interior Installations',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		3,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Vehicle Upgrade Console',
+		'Build in the moonpool to upgrade docked vehicles',
+		'baseupgradeconsole',
+		'Interior Installations',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Vehicle Upgrade Console',
+		'Turns seawater into water and salt.',
+		'basefiltrationmachine',
+		'Interior Installations',
+		'Habitat Builder',
+		0,	/* Power Capacity. -2350 energy to produce per unit */
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+
+/* Interior Modules */
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Biasc Plant Pot',
+		'Titanium pot containing synthetic soil.',
+		'planterpot',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Battery Charger',
+		'Can charge multiple batteries simultaneously.',
+		'planterpot',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Chic Plant Pot',
+		'Upmarket pot containing syntehtic soil.',
+		'planterpot3',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Composite Plant Pot',
+		'Designer pot containing synthetic soil.',
+		'planterpot2',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Fabricator',
+		'Basic survival fabricator. Atomically rearranges raw resources into useful objects.',
+		'fabricator',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Indoor Growbed',
+		'Artificial plant bed, suitable for interior use only.',
+		'planterbox',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Aquarium',
+		'Self-sustaining aquatic habitat.',
+		'',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Locker',
+		'Large free-standing storage.',
+		'locker',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		-48,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Medical Kit Fabricator',
+		'Fabricates a medical kit every 30 minutes.',
+		'',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Modification Station',
+		'Advanced fabricator for modification of survival equipment.',
+		'workbench',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Plant Shelf',
+		'Wall-mounted plant pot.',
+		'plantershelf',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Power Cell Charger',
+		'Can charge multiple power cells simulatneously.',
+		'powercellcharger',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Radio',
+		'Receive short-range communications.',
+		'radio',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Wall Locker',
+		'Small wall-mounted storage solution.',
+		'smalllocker',
+		'Interior Modules',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		-30,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+
+	/* Interior Rooms */
+
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Alien Containment',
+		'Provides optimal conditions for flora and fauna. Add a hatch to enter.',
+		'basewaterpark',
+		'Interior Rooms',
+		'Habitat Builder',
+		0,	/* Power Capacity.*/
+		0,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Bioreactor',
+		'Composts organic matter into electrical energy.',
+		'basebioreactor',
+		'Interior Rooms',
+		'Habitat Builder',
+		500,	/* Power Capacity.*/
+		25,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+VALUES	(
+		'Nuclear Reactor',
+		'Processes nuclear reactor rods for huge power supply.',
+		'basenuclearreactor',
+		'Interior Rooms',
+		'Habitat Builder',
+		2500,	/* Power Capacity.*/
+		250,	/* Power Per Minute is variable */
+		0,	/* Power Consumption Per Minute */
+		0,	/*hull integrity*/
+		0,	/*BioReactor Energy*/
+		0,	/* Food Nutrition */
+		0,	/* Water Nutrition */
+		3,	/*Build Time*/
+		0,	/*size*/
+		1,	/*craftable*/
+		0	/*raw*/
+	);
