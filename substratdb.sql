@@ -10,8 +10,8 @@ CREATE TABLE IF NOT EXISTS `item` (
 	`itemPConsumption` smallint(4) DEFAULT NULL 				COMMENT 'Power consumed per minute.',  
 	`itemHullIntegrity` decimal(3,2) DEFAULT NULL 				COMMENT 'Hull integrity added to bases with this item.',
 	`itemEnergy` smallint(6) DEFAULT NULL 						COMMENT 'Power that the item will convert to in the bioreactor.',
-	`itemFood` smallint(3) DEFAULT NULL							COMMENT 'Food value if eaten.'
-	`itemWater` smallint(3) DEFAULT NULL						COMMENT 'Water value if drank.'
+	`itemFood` smallint(3) DEFAULT NULL							COMMENT 'Food value if eaten.',
+	`itemWater` smallint(3) DEFAULT NULL						COMMENT 'Water value if drank.',
 	`itemBuildTime` tinyint(4) DEFAULT NULL 					COMMENT 'Time it takes to craft item.',
 	`itemSize` tinyint(4) DEFAULT NULL 							COMMENT 'Inventory space item uses.',
 	`itemIsCraftable` tinyint(1) NOT NULL 						COMMENT 'Item can be crafted.',
@@ -533,7 +533,7 @@ VALUES	(
 
 /*Cooked Food*/
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Hoopfish',
 		'small, edible prey fish.',
@@ -552,7 +552,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Garryfish',
 		'Floral flavor, but very little of it.',
@@ -571,7 +571,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Eyeye',
 		'Small, edible prey fish.',
@@ -590,7 +590,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Reginald',
 		'Pungent and smokey. Extremely filling.',
@@ -609,7 +609,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Spadefish',
 		'Small, edible prey fish.',
@@ -628,7 +628,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Boomerang',
 		'Good eating around teh fins.',
@@ -647,7 +647,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Peeper',
 		'Protein-rich eyeballs. Highly nutritious.',
@@ -666,7 +666,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Oculus',
 		'Small, edible prey fish.',
@@ -685,7 +685,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Holefish',
 		'Gelatinous flesh.',
@@ -704,7 +704,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Bladderfish',
 		'Spongy. Gristly. Low calorie count. Thankfully odorless.',
@@ -723,7 +723,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Spinefish',
 		'Never eat the antennae.',
@@ -742,7 +742,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Hoverfish',
 		'Small, edible prey fish.',
@@ -761,7 +761,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Magmarang',
 		'Small, edible prey fish.',
@@ -780,7 +780,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cooked Red Eyeye',
 		'Small, edible prey fish.',
@@ -802,7 +802,7 @@ VALUES	(
 
 /*Cured Food*/
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Hoopfish',
 		'small, edible prey fish.',
@@ -821,7 +821,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Garryfish',
 		'Floral flavor, but very little of it.',
@@ -840,7 +840,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Eyeye',
 		'Floral flavor, but very little of it.',
@@ -859,7 +859,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Reginald',
 		'Pungent and smokey. Extremely filling.',
@@ -878,7 +878,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Spadefish',
 		'Small, edible prey fish.',
@@ -898,7 +898,7 @@ VALUES	(
 		0	/*raw*/
 	);
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Boomerang',
 		'Good eating around teh fins.',
@@ -917,7 +917,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Peeper',
 		'Protein-rich eyeballs. Highly nutritious.',
@@ -936,7 +936,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Oculus',
 		'Small, edible prey fish.',
@@ -955,7 +955,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Holefish',
 		'Gelatinous flesh.',
@@ -974,7 +974,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Bladderfish',
 		'Spongy. Gristly. Low calorie count. Thankfully odorless.',
@@ -993,7 +993,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Spinefish',
 		'Never eat the antennae.',
@@ -1012,7 +1012,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Hoverfish',
 		'Small, edible prey fish.',
@@ -1031,7 +1031,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Magmarang',
 		'Small, edible prey fish.',
@@ -1050,7 +1050,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cured Red Eyeye',
 		'Small, edible prey fish.',
@@ -1071,7 +1071,7 @@ VALUES	(
 	);
 /* Cyclops Ignored blueprints */
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cyclops',
 		'Vast industrial-use submarine.',
@@ -1093,7 +1093,7 @@ VALUES	(
 
 /* Cyclops Upgrades */
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cyclops Decoy Tube Upgrade',
 		'Increases the capacity of the cyclops decoy loading tube.',
@@ -1112,7 +1112,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cyclops Depth Module MK1',
 		'Increases safe dirving depth. Does not stack.',
@@ -1131,7 +1131,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cyclops Engine Efficiency Module',
 		'Recycles heat by-product to increase engine efficiency',
@@ -1150,7 +1150,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cyclops Fire Suppression System',
 		'Installs a fire suppression system on the Cyclops.',
@@ -1169,7 +1169,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cyclops Shield Generator',
 		'Creates a temporary barrier around the sub, rendering it invulnerable for a brief time.',
@@ -1188,7 +1188,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cyclops Sonar Upgrade',
 		'Scans the terrain outside the Cyclops.',
@@ -1207,7 +1207,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Cyclops Thermal Reactor Module',
 		'Transfers environmental heat energy into electrical power.',
@@ -1229,7 +1229,7 @@ VALUES	(
 
 /* Electronics */
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Advanced Wiring Kit',
 		'CPU used in advanced construction.',
@@ -1248,7 +1248,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Battery',
 		'Mobile power source.',
@@ -1268,7 +1268,7 @@ VALUES	(
 		0	/*raw*/
 	);
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Computer Chip',
 		'Multi-purpose CPU.',
@@ -1288,7 +1288,7 @@ VALUES	(
 		0	/*raw*/
 	);
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Copper Wire',
 		'Copper atoms fabricated into basic electrical wiring.',
@@ -1307,7 +1307,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Power Cell',
 		'High-capacity mobile power source.',
@@ -1326,7 +1326,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Reactor Rod',
 		'Used to power nuclear reactors.',
@@ -1345,7 +1345,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Depleted Reactor Rod',
 		'Used to power nuclear reactors.',
@@ -1364,7 +1364,7 @@ VALUES	(
 		0,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Wiring Kit',
 		'Insulated silver wire. Essential electronic component.',
@@ -1384,7 +1384,7 @@ VALUES	(
 		0	/*raw*/
 	);
 /* Equipment */
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Compass',
 		'Displays compass heading on the HUD.',
@@ -1403,7 +1403,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Fins',
 		'Translate vertical limb movements underwater into forward thrust. Enhence swim speed by approximately 15%.',
@@ -1422,7 +1422,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Fire Extinguisher',
 		'Extinguishes fires.',
@@ -1441,7 +1441,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'First Aid Kit',
 		'Treated bandages. Apply to staunch blood-flow and sanitize wounds.',
@@ -1460,7 +1460,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Floating Air Pump',
 		'Floating device that pumps air into pipes. Acts as a starting point for a pipe chain.',
@@ -1479,7 +1479,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Orange Tablet',
 		'This device hums slightly, and displays an orange-lit symbol resembling an "n".',
@@ -1498,7 +1498,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Pipe',
 		'A chain of pipes can be used to pump air to far away places. Start with a pump.',
@@ -1517,7 +1517,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Purple Tablet',
 		'This carbon-based device is lighter than it looks, and features a symbol which resembles a "U", lit up in purple. Despite the onboard power still functioning, algae growth on the exterior indicates it was abandoned hundreds, perhaps thousands of years ago. While the technology is far beyond federation levels, and there is no obvious way to interface with it, it should nonetheless be possible to fabricate a precise physical copy of the device, if necessary.',
@@ -1536,7 +1536,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Radiation Suit',
 		'Lead-lined suit providing insulation from radiation.',
@@ -1555,7 +1555,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Rebreather',
 		'Conserves oxygen when diving deeper. Absorbs and recycles CO2 into breathable air.',
@@ -1574,7 +1574,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Reinforced Dive Suit',
 		'Heavy synthetic fiber dive suit providing 50% physical protection and enhanced survival in extreme temperatures.',
@@ -1593,7 +1593,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Standard O2 Tank',
 		'O2 mix. Compressed breathable air.',
@@ -1612,7 +1612,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Standard O2 Tank',
 		'O2 mix. Compressed breathable air.',
@@ -1632,7 +1632,7 @@ VALUES	(
 		0	/*raw*/
 	);
 /* Exterior Lights */
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Flightlight',
 		'Industrial lighting designed for all environments.',
@@ -1651,7 +1651,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Spotlight',
 		'Fixed lighting solution.',
@@ -1672,7 +1672,7 @@ VALUES	(
 	);
 /* Exterior Modules */
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Power Transmitter',
 		'Extends the range of a power source.',
@@ -1691,7 +1691,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Solar Panel',
 		'Powers habitat oxygen generation and other modules. Converts available sunlight into low power electrical energy.',
@@ -1710,7 +1710,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Thermal Plant',
 		'Converts heat to energy at medium efficiency.',
@@ -1731,7 +1731,7 @@ VALUES	(
 	);
 /* Exterior Other */
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Base-attached Air Pump',
 		'Pumps oxygen from a powered habitat to an attached pipe network.',
@@ -1750,7 +1750,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Exterior Growbed',
 		'Artificial plant bed, suitable for use on land or underwater.',
@@ -1771,7 +1771,7 @@ VALUES	(
 	);
 /* Interior Installations */
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Ladder',
 		'Connects two floors.',
@@ -1790,7 +1790,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Bulkhead',
 		'Provides structural support and prevents flooding (+3HP).',
@@ -1809,7 +1809,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Vehicle Upgrade Console',
 		'Build in the moonpool to upgrade docked vehicles',
@@ -1828,7 +1828,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Vehicle Upgrade Console',
 		'Turns seawater into water and salt.',
@@ -1850,7 +1850,7 @@ VALUES	(
 
 /* Interior Modules */
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Biasc Plant Pot',
 		'Titanium pot containing synthetic soil.',
@@ -1869,7 +1869,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Battery Charger',
 		'Can charge multiple batteries simultaneously.',
@@ -1888,7 +1888,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Chic Plant Pot',
 		'Upmarket pot containing syntehtic soil.',
@@ -1907,7 +1907,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Composite Plant Pot',
 		'Designer pot containing synthetic soil.',
@@ -1926,7 +1926,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Fabricator',
 		'Basic survival fabricator. Atomically rearranges raw resources into useful objects.',
@@ -1945,7 +1945,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Indoor Growbed',
 		'Artificial plant bed, suitable for interior use only.',
@@ -1964,7 +1964,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Aquarium',
 		'Self-sustaining aquatic habitat.',
@@ -1983,7 +1983,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Locker',
 		'Large free-standing storage.',
@@ -2002,7 +2002,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Medical Kit Fabricator',
 		'Fabricates a medical kit every 30 minutes.',
@@ -2021,7 +2021,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Modification Station',
 		'Advanced fabricator for modification of survival equipment.',
@@ -2040,7 +2040,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Plant Shelf',
 		'Wall-mounted plant pot.',
@@ -2059,7 +2059,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Power Cell Charger',
 		'Can charge multiple power cells simulatneously.',
@@ -2078,7 +2078,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Radio',
 		'Receive short-range communications.',
@@ -2097,7 +2097,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Wall Locker',
 		'Small wall-mounted storage solution.',
@@ -2119,7 +2119,7 @@ VALUES	(
 
 	/* Interior Rooms */
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Alien Containment',
 		'Provides optimal conditions for flora and fauna. Add a hatch to enter.',
@@ -2138,7 +2138,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Bioreactor',
 		'Composts organic matter into electrical energy.',
@@ -2157,7 +2157,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Nuclear Reactor',
 		'Processes nuclear reactor rods for huge power supply.',
@@ -2178,7 +2178,7 @@ VALUES	(
 	);
 /* Machines */
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Beacon',
 		'Navigation aid. Maintains and broadcasts its position. Configurable name.',
@@ -2197,7 +2197,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Creature Decoy',
 		'Attracts creatures to its location. Can be deployed by hand or by a submarine. Cannot be reclaimed once deployed.',
@@ -2216,7 +2216,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Grav Trap',
 		'Uses artificial gravity to attract light objects and small creatures.',
@@ -2235,7 +2235,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Mobile Vehicle Bay',
 		'Fabricates vehicles from raw materials.',
@@ -2254,7 +2254,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Prawn Suit',
 		'Epic mech suit designed for navigating challenging environments on foot.',
@@ -2273,7 +2273,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Seaglide',
 		'Converts torque into thrust underwater via propeller.',
@@ -2292,7 +2292,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Seamoth',
 		'One-person vehicle.',
@@ -2311,7 +2311,7 @@ VALUES	(
 		1,	/*craftable*/
 		0	/*raw*/
 	);
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Waterproof Locker',
 		'4x4 storage that maintains position in the water.',
@@ -2333,7 +2333,7 @@ VALUES	(
 	
 /* Miscellaneous */
 
-INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
+INSERT INTO item ( itemName, itemDesc, itemGameId, itemMenu, itemMadeWith,itemPCapacity, itemPPM, itemPConsumption, itemHullIntegrity, itemEnergy, itemFood, itemWater, itemBuildTime,itemSize, itemIsCraftable, itemIsRaw )
 VALUES	(
 		'Waterproof Locker',
 		'4x4 storage that maintains position in the water.',
